@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Tailored Fit Resume AI — Case File for SMM &amp; Marketing Automation Roles</title>
+<meta name="description" content="A job-description-based resume tailoring workbench for beginner VAs targeting Social Media Management or Marketing Automation roles." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1F2A44;
+    --ink-soft:#5B6580;
+    --ink-faint:#8993AB;
+
+    --paper:#F6F4EC;
+    --paper-panel:#FCFBF6;
+    --paper-raised:#FFFFFF;
+
+    --kraft:#C9AF8C;
+    --kraft-dark:#A6835A;
+    --kraft-line:#DED2B8;
+
+    --teal:#0F6E63;
+    --teal-light:#E1EEEA;
+    --teal-line:#B9D4CC;
+
+    --amber:#B9701F;
+    --amber-light:#F5E9D6;
+    --amber-line:#E4C99A;
+
+    --brick:#9B3B3B;
+    --brick-light:#F3E1DF;
+    --brick-line:#DCB4AF;
+
+    --line:#DFD8C4;
+    --line-strong:#C9BE9E;
+
+    --radius-sm:6px;
+    --radius-md:10px;
+    --radius-lg:16px;
+
+    --shadow-card:0 1px 2px rgba(31,42,68,.04), 0 8px 24px rgba(31,42,68,.06);
+    --shadow-pop:0 4px 10px rgba(31,42,68,.10), 0 16px 40px rgba(31,42,68,.10);
+
+    --font-display:'Space Grotesk', sans-serif;
+    --font-body:'IBM Plex Sans', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+
+  a{ color:inherit; }
+  button, input, select, textarea{ font:inherit; color:inherit; }
+  :focus-visible{ outline:3px solid var(--amber); outline-offset:2px; }
+
+  .container{ width:min(1180px, 92%); margin-inline:auto; }
+
+  .grain{
+    position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.5;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(31,42,68,.015) 0px, rgba(31,42,68,.015) 1px, transparent 1px, transparent 3px);
+  }
+
+  .masthead{
+    position:relative; z-index:2;
+    border-bottom:1px solid var(--line-strong);
+    background:var(--paper-panel);
+  }
+  .masthead-inner{
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding:18px 0;
+  }
+  .brand{ display:flex; align-items:center; gap:14px; }
+  .brand-seal{
+    width:46px; height:46px; border-radius:50%;
+    border:2px solid var(--ink);
+    display:grid; place-items:center;
+    font-family:var(--font-mono); font-weight:600; font-size:.72rem;
+    color:var(--ink);
+    transform:rotate(-6deg);
+    background:var(--paper-raised);
+  }
+  .brand-text{ font-family:var(--font-display); font-weight:700; font-size:1.15rem; letter-spacing:-.01em; }
+  .brand-text small{
+    display:block; font-family:var(--font-mono); font-weight:500; font-size:.72rem;
+    letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin-top:2px;
+  }
+  .case-tag{
+    font-family:var(--font-mono); font-size:.75rem; color:var(--ink-soft);
+    border:1px dashed var(--line-strong); border-radius:999px; padding:6px 14px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .case-tag .dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); }
+  @media (max-width:720px){ .case-tag{ display:none; } }
+
+  .hero{ position:relative; z-index:1; padding:56px 0 28px; }
+  .hero-grid{ display:grid; grid-template-columns:1.35fr .9fr; gap:28px; align-items:start; }
+  @media (max-width:960px){ .hero-grid{ grid-template-columns:1fr; } }
+
+  .eyebrow{
+    font-family:var(--font-mono); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--teal); display:inline-flex; align-items:center; gap:8px; margin-bottom:16px;
+  }
+  .eyebrow::before{ content:"§"; font-weight:700; }
+
+  h1{
+    font-family:var(--font-display); font-weight:700; letter-spacing:-.02em;
+    font-size:clamp(1.9rem, 3.4vw, 2.9rem); line-height:1.08; margin:0 0 16px; max-width:16ch;
+  }
+  .hero p.lead{ color:var(--ink-soft); font-size:1.03rem; max-width:56ch; margin:0 0 24px; }
+
+  .hero-cta{ display:flex; flex-wrap:wrap; gap:12px; }
+
+  .btn{
+    font-family:var(--font-mono); font-weight:600; font-size:.85rem; letter-spacing:.02em;
+    border-radius:var(--radius-sm); border:1.5px solid transparent; cursor:pointer;
+    padding:13px 20px; display:inline-flex; align-items:center; gap:8px; transition:.15s ease;
+    text-transform:uppercase;
+  }
+  .btn:active{ transform:translateY(1px); }
+  .btn-primary{ background:var(--ink); color:var(--paper-raised); }
+  .btn-primary:hover{ background:#141d33; }
+  .btn-secondary{ background:var(--paper-raised); color:var(--ink); border-color:var(--line-strong); }
+  .btn-secondary:hover{ border-color:var(--ink); }
+  .btn-ghost{ background:transparent; color:var(--ink-soft); border-color:transparent; text-decoration:underline; text-underline-offset:3px; }
+  .btn-ghost:hover{ color:var(--ink); }
+  .btn-sm{ padding:9px 14px; font-size:.72rem; }
+
+  .dossier-card{
+    background:var(--paper-raised); border:1px solid var(--line-strong); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card); padding:26px; position:relative;
+  }
+  .dossier-card::before{
+    content:"CASE SUMMARY"; position:absolute; top:-11px; left:22px; background:var(--kraft);
+    color:var(--ink); font-family:var(--font-mono); font-size:.68rem; font-weight:600; letter-spacing:.08em;
+    padding:4px 10px; border-radius:4px;
+  }
+  .dossier-card h3{ font-family:var(--font-display); font-size:1.02rem; margin:0 0 8px; }
+  .dossier-row{ padding:14px 0; border-top:1px dashed var(--line); }
+  .dossier-row:first-of-type{ border-top:none; padding-top:6px; }
+  .dossier-row p{ margin:0; color:var(--ink-soft); font-size:.92rem; }
+
+  .section{ position:relative; z-index:1; padding:34px 0; }
+  .section-head{ margin-bottom:20px; display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .section-head h2{ font-family:var(--font-display); font-size:1.35rem; margin:0 0 6px; letter-spacing:-.01em; }
+  .step-index{ font-family:var(--font-mono); color:var(--kraft-dark); font-size:.85rem; margin-right:8px; }
+  .section-head p{ margin:0; color:var(--ink-soft); max-width:60ch; font-size:.94rem; }
+
+  .path-tabs{ display:grid; grid-template-columns:1fr 1fr; gap:0; }
+  @media (max-width:720px){ .path-tabs{ grid-template-columns:1fr; gap:14px; } }
+
+  .path-tab{
+    background:var(--paper-panel); border:1px solid var(--line-strong);
+    padding:24px 24px 22px; cursor:pointer; position:relative; transition:.15s ease;
+  }
+  .path-tab:first-child{ border-radius:var(--radius-lg) 0 0 var(--radius-lg); border-right:none; }
+  .path-tab:last-child{ border-radius:0 var(--radius-lg) var(--radius-lg) 0; }
+  @media (max-width:720px){
+    .path-tab:first-child, .path-tab:last-child{ border-radius:var(--radius-lg); border-right:1px solid var(--line-strong); }
+  }
+  .path-tab:hover{ background:var(--paper-raised); }
+  .path-tab.active{
+    background:var(--paper-raised); border-color:var(--ink);
+    box-shadow:var(--shadow-pop); z-index:2;
+  }
+  .path-tab .tag{
+    font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--ink-faint); display:block; margin-bottom:8px;
+  }
+  .path-tab.active .tag{ color:var(--teal); }
+  .path-tab h3{ font-family:var(--font-display); font-size:1.18rem; margin:0 0 8px; }
+  .path-tab p{ color:var(--ink-soft); font-size:.9rem; margin:0 0 12px; }
+  .path-tab ul{ margin:0; padding-left:18px; color:var(--ink-soft); font-size:.87rem; }
+  .path-tab li+li{ margin-top:6px; }
+  .path-tab .stamp{
+    position:absolute; top:16px; right:18px; font-family:var(--font-mono); font-size:.65rem;
+    font-weight:600; color:var(--teal); border:1.5px solid var(--teal); border-radius:999px;
+    padding:3px 9px; transform:rotate(-8deg); opacity:0; transition:.15s ease;
+  }
+  .path-tab.active .stamp{ opacity:1; }
+
+  .builder-layout{ display:grid; grid-template-columns:220px 1fr; gap:32px; align-items:start; }
+  @media (max-width:900px){ .builder-layout{ grid-template-columns:1fr; } }
+
+  .rail{
+    position:sticky; top:16px;
+    display:flex; flex-direction:column; gap:2px;
+  }
+  @media (max-width:900px){
+    .rail{
+      position:static; flex-direction:row; overflow-x:auto; gap:8px; padding-bottom:8px;
+      -webkit-overflow-scrolling:touch;
+    }
+  }
+  .rail-group-label{
+    font-family:var(--font-mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-faint); margin:14px 0 4px 14px;
+  }
+  .rail-group-label:first-child{ margin-top:0; }
+  @media (max-width:900px){ .rail-group-label{ display:none; } }
+
+  .rail-tab{
+    display:flex; align-items:center; gap:10px;
+    padding:10px 14px; border-radius:var(--radius-sm);
+    color:var(--ink-soft); font-size:.86rem; cursor:pointer; border:1px solid transparent;
+    background:transparent; text-align:left; white-space:nowrap;
+  }
+  .rail-tab:hover{ background:var(--paper-panel); }
+  .rail-tab.active{
+    background:var(--paper-raised); border-color:var(--line-strong); color:var(--ink); font-weight:600;
+    box-shadow:var(--shadow-card);
+  }
+  .rail-num{
+    font-family:var(--font-mono); font-size:.72rem; width:20px; height:20px; border-radius:50%;
+    border:1.5px solid var(--line-strong); display:grid; place-items:center; flex-shrink:0;
+  }
+  .rail-tab.active .rail-num{ border-color:var(--teal); color:var(--teal); }
+  .rail-tab.done .rail-num{ background:var(--teal); border-color:var(--teal); color:#fff; font-size:0; }
+  .rail-tab.done .rail-num::after{ content:"✓"; font-size:.7rem; }
+
+  .pages{ display:flex; flex-direction:column; gap:18px; }
+
+  .module{
+    background:var(--paper-raised); border:1px solid var(--line-strong); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card); overflow:hidden; scroll-margin-top:16px;
+  }
+  .module-head{
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    padding:20px 24px; cursor:pointer; user-select:none;
+  }
+  .module-head h3{ font-family:var(--font-display); font-size:1.08rem; margin:0; display:flex; align-items:center; gap:10px; }
+  .module-head .module-no{
+    font-family:var(--font-mono); font-size:.72rem; color:var(--kraft-dark); border:1px solid var(--kraft-line);
+    background:var(--paper-panel); border-radius:4px; padding:2px 7px;
+  }
+  .module-head .chev{ font-family:var(--font-mono); color:var(--ink-faint); transition:transform .15s ease; }
+  .module.collapsed .chev{ transform:rotate(-90deg); }
+  .module-sub{ color:var(--ink-soft); font-size:.87rem; margin:6px 0 0; max-width:66ch; }
+  .module-body{ padding:0 24px 24px; }
+  .module.collapsed .module-body{ display:none; }
+
+  .form-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+  @media (max-width:640px){ .form-grid{ grid-template-columns:1fr; } }
+  .full{ grid-column:1 / -1; }
+
+  .field{ display:flex; flex-direction:column; gap:6px; }
+  .field label{ font-weight:600; font-size:.86rem; }
+  .field input, .field select, .field textarea{
+    width:100%; background:var(--paper-panel); border:1px solid var(--line-strong);
+    border-radius:var(--radius-sm); padding:11px 12px; transition:.15s ease;
+  }
+  .field textarea{ min-height:130px; resize:vertical; font-family:var(--font-body); }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    background:var(--paper-raised); border-color:var(--ink);
+  }
+  .field input[readonly]{ color:var(--ink-soft); }
+
+  .tool-columns{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:4px; }
+  @media (max-width:720px){ .tool-columns{ grid-template-columns:1fr; } }
+  .tool-box{ background:var(--paper-panel); border:1px solid var(--line); border-radius:var(--radius-md); padding:16px; }
+  .tool-box h4{ font-family:var(--font-display); font-size:.95rem; margin:0 0 10px; }
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chip{
+    display:inline-flex; align-items:center; gap:7px; padding:8px 11px; border-radius:999px;
+    background:var(--paper-raised); border:1px solid var(--line-strong); font-size:.82rem; cursor:pointer; user-select:none;
+  }
+  .chip:has(input:checked){ background:var(--teal-light); border-color:var(--teal-line); color:var(--teal); font-weight:600; }
+  .chip input{ accent-color:var(--teal); width:14px; height:14px; }
+  .subsection{ margin-top:16px; padding-top:16px; border-top:1px dashed var(--line-strong); }
+
+  .evidence-table{ width:100%; border-collapse:collapse; margin-top:10px; }
+  .evidence-table th, .evidence-table td{
+    padding:11px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:.85rem; vertical-align:top;
+  }
+  .evidence-table th{ font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); }
+  .evidence-table tr:last-child td{ border-bottom:none; }
+
+  .notice{
+    margin-top:16px; padding:14px 16px; border-radius:var(--radius-md);
+    background:var(--amber-light); border:1px solid var(--amber-line); color:#6b4413; font-size:.87rem;
+  }
+  .notice.danger{ background:var(--brick-light); border-color:var(--brick-line); color:#6b2323; }
+  .notice strong{ display:block; margin-bottom:3px; font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; }
+
+  .module-actions{ display:flex; flex-wrap:wrap; gap:10px; padding:22px 24px; border-top:1px solid var(--line); background:var(--paper-panel); }
+
+  .perforation{ position:relative; height:1px; margin:36px 0; border-top:2px dashed var(--line-strong); }
+  .perforation span{
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    background:var(--paper); padding:0 14px; font-family:var(--font-mono); font-size:.7rem;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint);
+  }
+
+  .dash-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  @media (max-width:900px){ .dash-grid{ grid-template-columns:1fr; } }
+  .dash-card{
+    background:var(--paper-raised); border:1px solid var(--line-strong); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card); padding:24px;
+  }
+  .dash-card h3{ font-family:var(--font-display); font-size:1.05rem; margin:0 0 6px; }
+  .dash-card > p.hint{ color:var(--ink-soft); font-size:.85rem; margin:0 0 14px; }
+
+  .seal-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:6px; }
+  @media (max-width:520px){ .seal-row{ grid-template-columns:1fr 1fr; } }
+  .seal{
+    border:2px solid var(--line-strong); border-radius:var(--radius-md); padding:12px 10px; text-align:center;
+    background:var(--paper-panel);
+  }
+  .seal[data-tier="high"]{ border-color:var(--teal-line); background:var(--teal-light); }
+  .seal[data-tier="mid"]{ border-color:var(--amber-line); background:var(--amber-light); }
+  .seal[data-tier="low"]{ border-color:var(--brick-line); background:var(--brick-light); }
+  .seal strong{ display:block; font-family:var(--font-display); font-size:1.35rem; }
+  .seal span{ display:block; font-family:var(--font-mono); font-size:.66rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); margin-top:4px; }
+
+  .field-note{ margin-top:16px; }
+  .field-note h4{ font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-faint); margin:0 0 6px; }
+  .field-note p{ margin:0; font-size:.92rem; color:var(--ink); }
+
+  .ledger{ display:grid; grid-template-columns:1fr; gap:0; margin-top:8px; }
+  .ledger-col{ padding:14px 0; border-top:1px dashed var(--line-strong); }
+  .ledger-col:first-child{ border-top:none; padding-top:0; }
+  .ledger-col h4{
+    font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; margin:0 0 8px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .ledger-col.supported h4{ color:var(--teal); }
+  .ledger-col.addiftrue h4{ color:var(--amber); }
+  .ledger-col.avoid h4{ color:var(--brick); }
+  .kw-tags{ display:flex; flex-wrap:wrap; gap:7px; }
+  .kw{ font-family:var(--font-mono); font-size:.78rem; padding:5px 10px; border-radius:5px; background:var(--paper-panel); border:1px solid var(--line-strong); }
+  .kw.supported{ background:var(--teal-light); border-color:var(--teal-line); color:var(--teal); }
+  .kw.addiftrue{ background:var(--amber-light); border-color:var(--amber-line); color:var(--amber); }
+  .kw.avoid{ background:var(--brick-light); border-color:var(--brick-line); color:var(--brick); text-decoration:line-through; }
+
+  .list{ margin:8px 0 0 18px; padding:0; color:var(--ink); font-size:.9rem; }
+  .list li+li{ margin-top:8px; }
+  .list.muted li{ color:var(--ink-faint); }
+
+  .out-tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+  .out-tab{
+    font-family:var(--font-mono); font-size:.78rem; padding:9px 14px; border-radius:6px 6px 0 0;
+    border:1px solid var(--line-strong); border-bottom:none; background:var(--paper-panel); color:var(--ink-soft); cursor:pointer;
+  }
+  .out-tab.active{ background:var(--paper-raised); color:var(--ink); font-weight:600; border-color:var(--ink); }
+  .out-panel{
+    display:none; background:var(--paper-raised); border:1px solid var(--line-strong); border-radius:0 var(--radius-md) var(--radius-md) var(--radius-md);
+    padding:22px; min-height:220px; white-space:pre-wrap; font-family:var(--font-mono); font-size:.86rem; line-height:1.7; color:var(--ink);
+  }
+  .out-panel.active{ display:block; }
+
+  .footer{ padding:30px 0 60px; }
+  .footer-box{
+    background:var(--paper-panel); border:1px solid var(--line-strong); border-radius:var(--radius-lg); padding:24px;
+  }
+  .footer-box h3{ font-family:var(--font-display); font-size:1.02rem; margin:0 0 10px; }
+  .badge-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .soft-badge{
+    font-family:var(--font-mono); font-size:.72rem; padding:7px 11px; border-radius:999px;
+    background:var(--paper-raised); border:1px solid var(--line-strong); color:var(--ink-soft);
+  }
+  .back-link{ display:inline-block; margin-top:18px; font-family:var(--font-mono); font-size:.82rem; }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+  const MAIN_LINK_URL = "#";
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("[data-main-link]").forEach(el => el.setAttribute("href", MAIN_LINK_URL));
+  });
+</script>
+
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="brand">
+      <div class="brand-seal">TF</div>
+      <div class="brand-text">
+        Tailored Fit Resume AI
+        <small>Case File · SMM &amp; Marketing Automation</small>
+      </div>
+    </div>
+    <div class="case-tag"><span class="dot"></span> Draft in progress — evidence-based, no fabricated claims</div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">JD-based resume tailoring, two roles only</div>
+        <h1>Build a resume around the actual role, not the job title.</h1>
+        <p class="lead">
+          This workbench is scoped to two paths — <strong>Social Media Management</strong> and
+          <strong>Marketing Automation</strong>. Paste the job description, log your real work history and
+          tools, and answer a few context questions. The engine audits the fit before it writes a single line.
+        </p>
+        <div class="hero-cta">
+          <a href="#step-01" class="btn btn-primary">Open the Case File</a>
+          <a href="#step-08" class="btn btn-secondary">Jump to Analysis</a>
+          <a href="#" data-main-link class="btn btn-ghost">&larr; Back to Main</a>
+        </div>
+      </div>
+
+      <div class="dossier-card">
+        <div class="dossier-row">
+          <h3>What gets produced</h3>
+          <p>Fit scorecard, ATS keyword ledger, gap diagnosis, and a positioning call — then modular resume sections generated from evidence you actually have.</p>
+        </div>
+        <div class="dossier-row">
+          <h3>Scope, deliberately narrow</h3>
+          <p>Limited to SMM and Marketing Automation so the keyword logic and phrasing stay specific instead of generic.</p>
+        </div>
+        <div class="dossier-row">
+          <h3>Integrity rule</h3>
+          <p>Study-only tools are never written up as paid work. No invented metrics, ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step-01">
+    <div class="container">
+      <div class="section-head">
+        <div><h2><span class="step-index">01</span>Choose the resume path</h2>
+        <p>This sets the language used for keyword extraction, scoring, and generated copy.</p></div>
+      </div>
+
+      <div class="path-tabs" id="pathCards">
+        <div class="path-tab active" data-path="smm">
+          <span class="stamp">selected</span>
+          <span class="tag">Track A</span>
+          <h3>Social Media Management</h3>
+          <p>Content execution, scheduling, engagement, reporting, page operations.</p>
+          <ul>
+            <li>Content calendar &amp; posting support</li>
+            <li>Canva / creative asset coordination</li>
+            <li>Community management &amp; response</li>
+            <li>Engagement &amp; performance reporting</li>
+          </ul>
+        </div>
+        <div class="path-tab" data-path="automation">
+          <span class="stamp">selected</span>
+          <span class="tag">Track B</span>
+          <h3>Marketing Automation</h3>
+          <p>Workflows, CRM support, email/SMS automation, lead nurturing, funnels.</p>
+          <ul>
+            <li>CRM tagging &amp; segmentation</li>
+            <li>Email workflow &amp; follow-up automation</li>
+            <li>Funnels, forms, landing pages</li>
+            <li>Pipeline visibility &amp; process accuracy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="builder">
+    <div class="container">
+      <div class="builder-layout">
+
+        <nav class="rail" id="rail" aria-label="Case file steps">
+          <div class="rail-group-label">Intake</div>
+          <button class="rail-tab" data-target="step-01"><span class="rail-num">1</span>Role path</button>
+          <button class="rail-tab" data-target="step-02"><span class="rail-num">2</span>Job description</button>
+          <button class="rail-tab" data-target="step-03"><span class="rail-num">3</span>Work history</button>
+          <button class="rail-tab" data-target="step-04"><span class="rail-num">4</span>Tools &amp; proof</button>
+          <button class="rail-tab" data-target="step-05"><span class="rail-num">5</span>Metrics</button>
+          <button class="rail-tab" data-target="step-06"><span class="rail-num">6</span>Context</button>
+          <button class="rail-tab" data-target="step-07"><span class="rail-num">7</span>Problem &amp; goal</button>
+          <div class="rail-group-label">Results</div>
+          <button class="rail-tab" data-target="step-08"><span class="rail-num">8</span>Analysis</button>
+          <button class="rail-tab" data-target="step-09"><span class="rail-num">9</span>Output</button>
+        </nav>
+
+        <div class="pages">
+
+          <div class="module" id="step-02">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">02</span>Job description</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Paste the exact posting. This is parsed for responsibilities, tools, seniority signals, ATS keywords, and likely business goals.</p>
+              <div class="form-grid" style="margin-top:14px;">
+                <div class="field">
+                  <label for="jobTitle">Target job title</label>
+                  <input id="jobTitle" type="text" placeholder="e.g. Social Media Specialist" />
+                </div>
+                <div class="field">
+                  <label for="companyType">Company type</label>
+                  <select id="companyType">
+                    <option value="">Select company type</option>
+                    <option>Agency</option>
+                    <option>Startup</option>
+                    <option>Small Business</option>
+                    <option>In-House / Corporate</option>
+                    <option>Freelancer Client / Consultant</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="jobDescription">Paste job description</label>
+                  <textarea id="jobDescription" placeholder="Paste the full job description here."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-03">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">03</span>Work history</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Paste your current resume or describe your work history. This separates direct, transferable, project, and study-only evidence.</p>
+              <div class="form-grid" style="margin-top:14px;">
+                <div class="field full">
+                  <label for="resumeText">Paste resume or work history</label>
+                  <textarea id="resumeText" placeholder="Role titles, responsibilities, tools used, measurable results, projects, certifications."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-04">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">04</span>Tools &amp; proof</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Select only what you can back up. Use the notes fields to say whether it was paid work, a project, or study-only.</p>
+
+              <div class="tool-columns">
+                <div class="tool-box" id="smmToolsBox">
+                  <h4>Social media tools</h4>
+                  <div class="chips">
+                    <label class="chip"><input type="checkbox" value="Meta Business Suite" /> Meta Business Suite</label>
+                    <label class="chip"><input type="checkbox" value="Canva" /> Canva</label>
+                    <label class="chip"><input type="checkbox" value="CapCut" /> CapCut</label>
+                    <label class="chip"><input type="checkbox" value="Buffer" /> Buffer</label>
+                    <label class="chip"><input type="checkbox" value="Hootsuite" /> Hootsuite</label>
+                    <label class="chip"><input type="checkbox" value="Later" /> Later</label>
+                    <label class="chip"><input type="checkbox" value="Content Calendar Planning" /> Content Calendar</label>
+                    <label class="chip"><input type="checkbox" value="Caption Writing" /> Caption Writing</label>
+                    <label class="chip"><input type="checkbox" value="Community Management" /> Community Mgmt</label>
+                    <label class="chip"><input type="checkbox" value="Social Reporting" /> Social Reporting</label>
+                    <label class="chip"><input type="checkbox" value="Meta Ads Support" /> Meta Ads Support</label>
+                  </div>
+                  <div class="subsection">
+                    <div class="field">
+                      <label for="smmEvidence">SMM evidence notes</label>
+                      <textarea id="smmEvidence" style="min-height:120px;" placeholder="Example: Canva — created graphics for volunteer page (project)."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tool-box" id="automationToolsBox">
+                  <h4>Marketing automation tools</h4>
+                  <div class="chips">
+                    <label class="chip"><input type="checkbox" value="GoHighLevel" /> GoHighLevel</label>
+                    <label class="chip"><input type="checkbox" value="Systeme.io" /> Systeme.io</label>
+                    <label class="chip"><input type="checkbox" value="Mailchimp" /> Mailchimp</label>
+                    <label class="chip"><input type="checkbox" value="HubSpot" /> HubSpot</label>
+                    <label class="chip"><input type="checkbox" value="Klaviyo" /> Klaviyo</label>
+                    <label class="chip"><input type="checkbox" value="ActiveCampaign" /> ActiveCampaign</label>
+                    <label class="chip"><input type="checkbox" value="Zapier" /> Zapier</label>
+                    <label class="chip"><input type="checkbox" value="n8n" /> n8n</label>
+                    <label class="chip"><input type="checkbox" value="CRM Tagging / Segmentation" /> CRM Tagging</label>
+                    <label class="chip"><input type="checkbox" value="Landing Pages / Forms" /> Landing Pages / Forms</label>
+                    <label class="chip"><input type="checkbox" value="Email Workflows" /> Email Workflows</label>
+                    <label class="chip"><input type="checkbox" value="SMS Automation" /> SMS Automation</label>
+                    <label class="chip"><input type="checkbox" value="Pipeline / Funnel Support" /> Pipeline / Funnel Support</label>
+                  </div>
+                  <div class="subsection">
+                    <div class="field">
+                      <label for="automationEvidence">Automation evidence notes</label>
+                      <textarea id="automationEvidence" style="min-height:120px;" placeholder="Example: Systeme.io — built landing page + follow-up sequence (practice project)."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subsection">
+                <h4 style="font-family:var(--font-mono); font-size:.8rem; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); margin:0 0 8px;">Evidence classification</h4>
+                <table class="evidence-table">
+                  <thead><tr><th>Evidence type</th><th>How it's treated</th></tr></thead>
+                  <tbody>
+                    <tr><td>Paid work / employment</td><td>Written into work experience when relevant.</td></tr>
+                    <tr><td>Project / portfolio work</td><td>Goes into a dedicated projects section, clearly labeled.</td></tr>
+                    <tr><td>Volunteer / org work</td><td>Used if clearly labeled and genuinely relevant.</td></tr>
+                    <tr><td>Study-only / tutorial</td><td>Never presented as real work experience.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-05">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">05</span>Metrics &amp; outcomes</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Add anything measurable, even if small — volume, frequency, turnaround time, or scope of ownership all count.</p>
+              <div class="form-grid" style="margin-top:14px;">
+                <div class="field">
+                  <label for="smmMetrics">SMM metrics / outcomes</label>
+                  <textarea id="smmMetrics" style="min-height:130px;" placeholder="e.g. Managed 4 posts/week, improved engagement, maintained a calendar for 2 months."></textarea>
+                </div>
+                <div class="field">
+                  <label for="automationMetrics">Automation metrics / outcomes</label>
+                  <textarea id="automationMetrics" style="min-height:130px;" placeholder="e.g. Built 2 workflows, created a 3-email sequence, maintained CRM tags."></textarea>
+                </div>
+                <div class="field full">
+                  <label for="opsMetrics">Transferable admin / ops proof</label>
+                  <textarea id="opsMetrics" style="min-height:110px;" placeholder="e.g. Managed records in Excel, prepared recurring reports, handled scheduling."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-06">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">06</span>Application context</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Wording shifts depending on who's hiring, how senior the role is, and whether it's execution- or strategy-heavy.</p>
+              <div class="form-grid" style="margin-top:14px;">
+                <div class="field">
+                  <label for="employmentType">Employment type</label>
+                  <select id="employmentType">
+                    <option value="">Select employment type</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Freelance</option>
+                    <option>Contract</option>
+                    <option>VA / Remote Support</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="seniority">Target seniority</label>
+                  <select id="seniority">
+                    <option value="">Select seniority</option>
+                    <option>Entry-level</option>
+                    <option>Junior</option>
+                    <option>Mid-level</option>
+                    <option>Specialist</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="roleWeight">Role emphasis</label>
+                  <select id="roleWeight">
+                    <option value="">Select role emphasis</option>
+                    <option>Execution-heavy</option>
+                    <option>Reporting-heavy</option>
+                    <option>Automation-heavy</option>
+                    <option>Client-facing</option>
+                    <option>Mixed / unclear</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="targetPathReadOnly">Current path</label>
+                  <input id="targetPathReadOnly" type="text" value="Social Media Management" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-07">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">07</span>Role problem &amp; client goal</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">The differentiator. Resume language should align to the actual problem the role solves, not just its keywords.</p>
+              <div class="form-grid" style="margin-top:14px;">
+                <div class="field">
+                  <label for="roleProblem">What problem is this role likely expected to solve?</label>
+                  <textarea id="roleProblem" style="min-height:130px;" placeholder="e.g. inconsistent posting, leads slipping through the cracks, messy CRM."></textarea>
+                </div>
+                <div class="field">
+                  <label for="clientGoal">What does the employer likely want most?</label>
+                  <textarea id="clientGoal" style="min-height:130px;" placeholder="e.g. more leads, better consistency, faster follow-up."></textarea>
+                </div>
+              </div>
+              <div class="notice">
+                <strong>Integrity rule</strong>
+                Stronger phrasing and relevance are fair game. Fake numbers, disguising training as paid work, or claiming unsupported tools are not.
+              </div>
+            </div>
+            <div class="module-actions">
+              <button class="btn btn-primary" id="runAnalysisBtn">Run fit analysis</button>
+              <button class="btn btn-secondary btn-sm" id="loadDemoBtn">Load demo data</button>
+              <button class="btn btn-ghost btn-sm" id="clearBtn">Clear form</button>
+            </div>
+          </div>
+
+          <div class="perforation"><span>Analysis begins here</span></div>
+
+          <div class="module" id="step-08" style="border-color:var(--ink);">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">08</span>Analysis dashboard</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Runs before generation: classify the role, audit fit, flag gaps, decide positioning.</p>
+
+              <div class="dash-grid" style="margin-top:14px;">
+                <div class="dash-card">
+                  <h3>Role reality</h3>
+                  <p class="hint">Classification, seniority, emphasis, and inferred problem / goal.</p>
+                  <div class="seal-row">
+                    <div class="seal" data-tier="mid"><strong id="roleTypeOut">&mdash;</strong><span>Role</span></div>
+                    <div class="seal" data-tier="mid"><strong id="seniorityOut">&mdash;</strong><span>Seniority</span></div>
+                    <div class="seal" data-tier="mid"><strong id="focusOut">&mdash;</strong><span>Emphasis</span></div>
+                  </div>
+                  <div class="field-note"><h4>Likely business problem</h4><p id="problemOut">No analysis yet.</p></div>
+                  <div class="field-note"><h4>Likely employer goal</h4><p id="goalOut">No analysis yet.</p></div>
+                </div>
+
+                <div class="dash-card">
+                  <h3>Candidate fit audit</h3>
+                  <p class="hint">Six-factor scorecard, each rated out of 10.</p>
+                  <div class="seal-row" style="grid-template-columns:repeat(3,1fr);">
+                    <div class="seal" id="sealRole"><strong id="scoreRole">0/10</strong><span>Role align</span></div>
+                    <div class="seal" id="sealATS"><strong id="scoreATS">0/10</strong><span>ATS coverage</span></div>
+                    <div class="seal" id="sealTools"><strong id="scoreTools">0/10</strong><span>Tool align</span></div>
+                    <div class="seal" id="sealEvidence"><strong id="scoreEvidence">0/10</strong><span>Evidence</span></div>
+                    <div class="seal" id="sealExp"><strong id="scoreExp">0/10</strong><span>Experience</span></div>
+                    <div class="seal" id="sealSeniority"><strong id="scoreSeniority">0/10</strong><span>Seniority fit</span></div>
+                  </div>
+                  <div class="field-note"><h4>Recommended positioning</h4><p id="positioningOut">No positioning recommendation yet.</p></div>
+                </div>
+
+                <div class="dash-card">
+                  <h3>ATS keyword ledger</h3>
+                  <p class="hint">Every keyword sorted into what you can claim now, what to add if true, and what to leave alone.</p>
+                  <div class="ledger">
+                    <div class="ledger-col supported"><h4>&#10003; Supported</h4><div class="kw-tags" id="supportedKeywords"><span class="kw supported">No analysis yet</span></div></div>
+                    <div class="ledger-col addiftrue"><h4>&#9651; Add-if-true</h4><div class="kw-tags" id="addIfTrueKeywords"><span class="kw addiftrue">No analysis yet</span></div></div>
+                    <div class="ledger-col avoid"><h4>&#10007; Do not claim yet</h4><div class="kw-tags" id="avoidKeywords"><span class="kw avoid">No analysis yet</span></div></div>
+                  </div>
+                </div>
+
+                <div class="dash-card">
+                  <h3>Gap diagnosis</h3>
+                  <p class="hint">What to push, what's missing, and what project work could fill the gap.</p>
+                  <div class="field-note"><h4>Strengths to push</h4><ul class="list muted" id="strengthsOut"><li>No analysis yet.</li></ul></div>
+                  <div class="field-note"><h4>Gaps / risks</h4><ul class="list muted" id="gapsOut"><li>No analysis yet.</li></ul></div>
+                  <div class="field-note"><h4>Project fillers</h4><ul class="list muted" id="projectsOut"><li>No analysis yet.</li></ul></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="module" id="step-09" style="border-color:var(--ink);">
+            <div class="module-head" data-toggle>
+              <h3><span class="module-no">09</span>Tailored output</h3>
+              <span class="chev">&#9662;</span>
+            </div>
+            <div class="module-body">
+              <p class="module-sub">Generate modular sections instead of one forced full-resume block.</p>
+
+              <div class="out-tabs" id="outputTabs" style="margin-top:14px;">
+                <button class="out-tab active" data-tab="summary">Summary</button>
+                <button class="out-tab" data-tab="experience">Experience rewrite</button>
+                <button class="out-tab" data-tab="projects">Projects</button>
+                <button class="out-tab" data-tab="skills">Skills</button>
+                <button class="out-tab" data-tab="interview">Interview positioning</button>
+              </div>
+
+              <div id="summary" class="out-panel active">Run the fit analysis first. This panel will hold a tailored summary aligned to the job description, selected path, employer goal, and your real evidence.</div>
+              <div id="experience" class="out-panel">Run the fit analysis first. This panel will rewrite work experience bullets, prioritizing relevance and honest reframing of transferable work.</div>
+              <div id="projects" class="out-panel">Run the fit analysis first. This panel will suggest or build a projects section when direct experience is thin.</div>
+              <div id="skills" class="out-panel">Run the fit analysis first. This panel will produce a function-based skills section.</div>
+              <div id="interview" class="out-panel">Run the fit analysis first. This panel will help you explain a career shift into SMM or Marketing Automation.</div>
+
+              <div class="module-actions" style="padding-left:0; padding-right:0; border-top:none; background:transparent;">
+                <button class="btn btn-primary" id="generateOutputsBtn">Generate sample outputs</button>
+                <button class="btn btn-secondary" id="copyActiveOutputBtn">Copy active output</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <h3>Implementation notes</h3>
+        <p style="margin:0; color:var(--ink-soft); font-size:.92rem;">
+          This is currently a front-end shell running mock scoring logic in the browser. To make it fully AI-driven, wire the form data into a prompt chain:
+        </p>
+        <div class="badge-row">
+          <span class="soft-badge">1 &middot; JD Analyzer</span>
+          <span class="soft-badge">2 &middot; Candidate Evidence Analyzer</span>
+          <span class="soft-badge">3 &middot; Fit Audit + ATS Mapper</span>
+          <span class="soft-badge">4 &middot; Positioning Strategy</span>
+          <span class="soft-badge">5 &middot; Resume Generator</span>
+        </div>
+        <div class="notice danger">
+          <strong>Non-negotiable</strong>
+          Never fabricate experience. Keep paid work, project work, volunteer work, and study-only exposure clearly separated.
+        </div>
+        <a href="#" data-main-link class="back-link">&larr; Back to Main</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  let currentPath = "smm";
+  const pathCards = document.querySelectorAll(".path-tab");
+  const targetPathReadOnly = document.getElementById("targetPathReadOnly");
+
+  function setPath(path){
+    currentPath = path;
+    pathCards.forEach(card => card.classList.toggle("active", card.dataset.path === path));
+    targetPathReadOnly.value = path === "smm" ? "Social Media Management" : "Marketing Automation";
+  }
+  pathCards.forEach(card => card.addEventListener("click", () => setPath(card.dataset.path)));
+
+  document.querySelectorAll(".module-head[data-toggle]").forEach(head => {
+    head.addEventListener("click", () => head.closest(".module").classList.toggle("collapsed"));
+  });
+
+  const railTabs = document.querySelectorAll(".rail-tab");
+  railTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const target = document.getElementById(tab.dataset.target);
+      if(target){
+        target.classList.remove("collapsed");
+        target.scrollIntoView({behavior:"smooth", block:"start"});
+      }
+    });
+  });
+
+  const observedSections = [...railTabs].map(t => document.getElementById(t.dataset.target)).filter(Boolean);
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        railTabs.forEach(t => t.classList.toggle("active", t.dataset.target === entry.target.id));
+      }
+    });
+  }, { rootMargin: "-20% 0px -70% 0px", threshold: 0 });
+  observedSections.forEach(sec => spy.observe(sec));
+
+  function markDone(targetId, isDone){
+    const tab = [...railTabs].find(t => t.dataset.target === targetId);
+    if(tab) tab.classList.toggle("done", !!isDone);
+  }
+  function refreshRailProgress(){
+    markDone("step-02", document.getElementById("jobDescription").value.trim().length > 0);
+    markDone("step-03", document.getElementById("resumeText").value.trim().length > 0);
+    const toolsChecked = document.querySelectorAll('#smmToolsBox input:checked, #automationToolsBox input:checked').length > 0;
+    markDone("step-04", toolsChecked);
+    const metricsFilled = [document.getElementById("smmMetrics").value, document.getElementById("automationMetrics").value, document.getElementById("opsMetrics").value].some(v => v.trim());
+    markDone("step-05", metricsFilled);
+    const contextFilled = document.getElementById("employmentType").value || document.getElementById("seniority").value || document.getElementById("roleWeight").value;
+    markDone("step-06", !!contextFilled);
+    const goalFilled = document.getElementById("roleProblem").value.trim() || document.getElementById("clientGoal").value.trim();
+    markDone("step-07", !!goalFilled);
+    markDone("step-01", true);
+  }
+  document.getElementById("builder").addEventListener("input", refreshRailProgress);
+  document.getElementById("builder").addEventListener("change", refreshRailProgress);
+
+  function getSelectedTools(boxId){
+    return [...document.getElementById(boxId).querySelectorAll('input[type="checkbox"]:checked')].map(cb => cb.value);
+  }
+
+  function tierFor(score){ return score >= 7 ? "high" : score >= 4 ? "mid" : "low"; }
+
+  function setScore(sealId, valueId, score){
+    document.getElementById(sealId).setAttribute("data-tier", tierFor(score));
+    document.getElementById(valueId).textContent = score + "/10";
+  }
+
+  function setKeywords(elId, items, type){
+    const el = document.getElementById(elId);
+    if(!items.length){ el.innerHTML = '<span class="kw ' + type + '">None detected</span>'; return; }
+    el.innerHTML = items.map(item => '<span class="kw ' + type + '">' + item + '</span>').join("");
+  }
+
+  function setList(elId, items){
+    const el = document.getElementById(elId);
+    el.classList.remove("muted");
+    if(!items.length){ el.innerHTML = "<li>No items yet.</li>"; el.classList.add("muted"); return; }
+    el.innerHTML = items.map(item => "<li>" + item + "</li>").join("");
+  }
+
+  function extractKeywords(text){
+    if(!text.trim()) return [];
+    const dictionary = [
+      "content calendar","content planning","social media management","community management",
+      "engagement","caption writing","canva","meta business suite","social reporting",
+      "analytics","campaign support","content scheduling","facebook","instagram",
+      "marketing automation","crm","email marketing","email workflows","lead nurturing",
+      "segmentation","tagging","zapier","n8n","systeme.io","gohighlevel","mailchimp",
+      "hubspot","landing pages","forms","funnels","pipeline","sms automation",
+      "reporting","workflow automation","lead generation"
+    ];
+    const lower = text.toLowerCase();
+    return dictionary.filter(k => lower.includes(k)).slice(0, 10);
+  }
+
+  function scoreFromPresence(text, terms){
+    const lower = (text || "").toLowerCase();
+    return terms.reduce((hits, t) => hits + (lower.includes(t.toLowerCase()) ? 1 : 0), 0);
+  }
+
+  function runAnalysis(){
+    const jobTitle = document.getElementById("jobTitle").value.trim();
+    const jd = document.getElementById("jobDescription").value.trim();
+    const resume = document.getElementById("resumeText").value.trim();
+    const smmEvidence = document.getElementById("smmEvidence").value.trim();
+    const automationEvidence = document.getElementById("automationEvidence").value.trim();
+    const smmMetrics = document.getElementById("smmMetrics").value.trim();
+    const automationMetrics = document.getElementById("automationMetrics").value.trim();
+    const opsMetrics = document.getElementById("opsMetrics").value.trim();
+    const seniority = document.getElementById("seniority").value.trim();
+    const roleWeight = document.getElementById("roleWeight").value.trim();
+    const roleProblem = document.getElementById("roleProblem").value.trim();
+    const clientGoal = document.getElementById("clientGoal").value.trim();
+    const smmTools = getSelectedTools("smmToolsBox");
+    const automationTools = getSelectedTools("automationToolsBox");
+
+    let roleType = currentPath === "smm" ? (jobTitle || "Social Media Role") : (jobTitle || "Automation Role");
+    let focus = currentPath === "smm" ? "Content + Reporting" : "CRM + Workflows";
+
+    document.getElementById("roleTypeOut").textContent = roleType;
+    document.getElementById("seniorityOut").textContent = seniority || "Not set";
+    document.getElementById("focusOut").textContent = roleWeight || focus;
+
+    document.getElementById("problemOut").textContent = roleProblem ||
+      (currentPath === "smm" ? "Likely: inconsistent posting, weak engagement, or poor social reporting." : "Likely: missing follow-up automation, messy CRM, or weak workflow execution.");
+    document.getElementById("goalOut").textContent = clientGoal ||
+      (currentPath === "smm" ? "Likely: improve content consistency, engagement, and social operations." : "Likely: improve lead follow-up, automation, and CRM organization.");
+
+    const sourceText = [jd,resume,smmEvidence,automationEvidence,smmMetrics,automationMetrics,opsMetrics].join(" ").toLowerCase();
+    const smmTerms = ["content","social","engagement","canva","community","caption","calendar","reporting","meta"];
+    const automationTerms = ["automation","crm","email","workflow","zapier","n8n","mailchimp","hubspot","funnel","lead"];
+    const relevantTerms = currentPath === "smm" ? smmTerms : automationTerms;
+    const roleHits = scoreFromPresence(sourceText, relevantTerms);
+    const toolCount = currentPath === "smm" ? smmTools.length : automationTools.length;
+    const jdKeywords = extractKeywords(jd);
+
+    const roleScore = Math.min(10, 3 + roleHits);
+    const atsScore = Math.min(10, jdKeywords.filter(k => sourceText.includes(k)).length + 2);
+    const toolScore = Math.min(10, toolCount + 2);
+    const evidenceScore = Math.min(10, (smmMetrics?2:0)+(automationMetrics?2:0)+(opsMetrics?2:0)+(resume?2:0));
+    const expScore = Math.min(10, (resume?4:0) + (roleHits>=3?3:1) + (toolCount>=3?2:0));
+    const seniorityScore = seniority ? 7 : 4;
+
+    setScore("sealRole","scoreRole",roleScore);
+    setScore("sealATS","scoreATS",atsScore);
+    setScore("sealTools","scoreTools",toolScore);
+    setScore("sealEvidence","scoreEvidence",evidenceScore);
+    setScore("sealExp","scoreExp",expScore);
+    setScore("sealSeniority","scoreSeniority",seniorityScore);
+
+    document.getElementById("positioningOut").textContent = currentPath === "smm"
+      ? "Position as an execution-oriented social media support professional: content coordination, posting workflows, engagement support, reporting. Push operational consistency over brand strategy unless evidence supports it."
+      : "Position as a process-driven marketing automation support professional: CRM organization, workflow execution, lead follow-up, funnel support. Push systems thinking and accuracy over senior lifecycle strategy unless evidence supports it.";
+
+    const supported = jdKeywords.filter(k => sourceText.includes(k));
+    const addIfTrue = jdKeywords.filter(k => !supported.includes(k)).slice(0,4);
+    const avoid = currentPath === "smm"
+      ? ["Paid ads strategy","Brand strategy","Influencer campaign management"].slice(0, addIfTrue.length ? 2 : 3)
+      : ["Advanced lifecycle strategy","Complex CRM architecture","Revenue attribution modeling"].slice(0, addIfTrue.length ? 2 : 3);
+
+    setKeywords("supportedKeywords", supported.length ? supported : (currentPath==="smm" ? ["content calendar","community management","social reporting"] : ["crm","email workflows","lead nurturing"]), "supported");
+    setKeywords("addIfTrueKeywords", addIfTrue.length ? addIfTrue : (currentPath==="smm" ? ["meta business suite","canva","caption writing"] : ["landing pages","segmentation","pipeline support"]), "addiftrue");
+    setKeywords("avoidKeywords", avoid, "avoid");
+
+    let strengths, gaps, projects;
+    if(currentPath === "smm"){
+      strengths = [
+        "Content scheduling, posting support, page operations, or caption writing should sit higher in the resume.",
+        "Canva, community management, and reporting work are relevant proof points.",
+        "Admin/coordination work can be reframed toward workflow consistency and execution discipline."
+      ];
+      gaps = [
+        "Without direct content or reporting examples, role alignment reads weaker.",
+        "Generic admin bullets without social relevance dilute ATS fit.",
+        "Don't claim advanced content strategy or campaign ownership without evidence."
+      ];
+      projects = [
+        "Build a 30-day content calendar with pillars and posting cadence.",
+        "Create a simple engagement/reporting dashboard in Sheets.",
+        "Assemble a mini portfolio of captions, assets, and a posting workflow."
+      ];
+    } else {
+      strengths = [
+        "CRM handling, email workflows, form setup, or process documentation should be prioritized.",
+        "Admin work reframes well toward accuracy, workflow support, and structured execution.",
+        "Project-based automation work counts if clearly labeled with real outcomes."
+      ];
+      gaps = [
+        "Listing tools without describing what was built reads as weak evidence.",
+        "Never present study-only exposure as real automation experience.",
+        "Avoid claiming senior lifecycle strategy or complex CRM architecture without proof."
+      ];
+      projects = [
+        "Build a sample lead capture funnel: landing page, form, follow-up sequence.",
+        "Create a CRM tagging/segmentation workflow for a mock business.",
+        "Document an automation workflow that removes a manual follow-up step."
+      ];
+    }
+    setList("strengthsOut", strengths);
+    setList("gapsOut", gaps);
+    setList("projectsOut", projects);
+
+    document.getElementById("step-08").classList.remove("collapsed");
+    document.getElementById("step-08").scrollIntoView({behavior:"smooth", block:"start"});
+    refreshRailProgress();
+  }
+
+  function loadDemoData(){
+    if(currentPath === "smm"){
+      document.getElementById("jobTitle").value = "Social Media Specialist";
+      document.getElementById("companyType").value = "Agency";
+      document.getElementById("jobDescription").value = "We are looking for a Social Media Specialist to manage content calendars, schedule posts, support community management, track engagement, and assist with monthly reporting. The role requires Canva, Meta Business Suite, caption writing, and strong organizational skills.";
+      document.getElementById("resumeText").value = "Administrative Assistant\n- Managed records and reporting in Excel\n- Coordinated schedules and organized documents\n\nVolunteer Page Support\n- Created Canva graphics for community posts\n- Drafted captions and scheduled Facebook posts\n- Tracked engagement in Google Sheets";
+      document.getElementById("smmEvidence").value = "- Canva: created post graphics for volunteer page\n- Meta Business Suite: scheduled Facebook posts\n- Social reporting: tracked engagement manually";
+      document.getElementById("automationEvidence").value = "";
+      document.getElementById("smmMetrics").value = "- Managed 3-4 posts per week for a volunteer page\n- Maintained posting consistency for 2 months";
+      document.getElementById("automationMetrics").value = "";
+      document.getElementById("opsMetrics").value = "- Managed records and reports in Excel\n- Coordinated schedules and document tracking";
+      document.getElementById("employmentType").value = "Full-time";
+      document.getElementById("seniority").value = "Junior";
+      document.getElementById("roleWeight").value = "Execution-heavy";
+      document.getElementById("roleProblem").value = "The role likely exists because the brand needs more consistent posting and clearer engagement reporting.";
+      document.getElementById("clientGoal").value = "The employer likely wants consistent content execution and a more organized social workflow.";
+      document.querySelectorAll('#smmToolsBox input[type="checkbox"]').forEach(cb => cb.checked = false);
+      ["Canva","Meta Business Suite","Content Calendar Planning","Caption Writing","Social Reporting"].forEach(name => {
+        const cb = [...document.querySelectorAll('#smmToolsBox input[type="checkbox"]')].find(x => x.value === name);
+        if(cb) cb.checked = true;
+      });
+    } else {
+      document.getElementById("jobTitle").value = "Marketing Automation Specialist";
+      document.getElementById("companyType").value = "Small Business";
+      document.getElementById("jobDescription").value = "We are seeking a Marketing Automation Specialist to support CRM updates, lead tagging, email workflows, landing pages, and follow-up automation. Experience with GoHighLevel or Systeme.io is preferred.";
+      document.getElementById("resumeText").value = "Administrative Assistant\n- Managed records and reports in Excel\n- Coordinated follow-up tasks\n\nPractice Projects\n- Built a landing page and form in Systeme.io\n- Drafted a welcome email sequence";
+      document.getElementById("smmEvidence").value = "";
+      document.getElementById("automationEvidence").value = "- Systeme.io: built landing page + form + basic email sequence\n- Zapier: practiced simple trigger-based workflow\n- CRM tagging: documented sample segmentation workflow";
+      document.getElementById("smmMetrics").value = "";
+      document.getElementById("automationMetrics").value = "- Built 1 practice landing page + lead form\n- Created a sample 3-email follow-up sequence";
+      document.getElementById("opsMetrics").value = "- Managed records in Excel\n- Maintained documentation and recurring reporting tasks";
+      document.getElementById("employmentType").value = "VA / Remote Support";
+      document.getElementById("seniority").value = "Junior";
+      document.getElementById("roleWeight").value = "Automation-heavy";
+      document.getElementById("roleProblem").value = "The role likely exists because leads are not being followed up consistently.";
+      document.getElementById("clientGoal").value = "The employer likely wants cleaner lead follow-up and better CRM organization.";
+      document.querySelectorAll('#automationToolsBox input[type="checkbox"]').forEach(cb => cb.checked = false);
+      ["Systeme.io","Zapier","CRM Tagging / Segmentation","Landing Pages / Forms","Email Workflows"].forEach(name => {
+        const cb = [...document.querySelectorAll('#automationToolsBox input[type="checkbox"]')].find(x => x.value === name);
+        if(cb) cb.checked = true;
+      });
+    }
+    refreshRailProgress();
+  }
+
+  function clearForm(){
+    document.querySelectorAll("input[type='text'], textarea").forEach(el => { if(el.id !== "targetPathReadOnly") el.value = ""; });
+    document.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+    document.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    targetPathReadOnly.value = currentPath === "smm" ? "Social Media Management" : "Marketing Automation";
+    refreshRailProgress();
+  }
+
+  const outputTabs = document.querySelectorAll(".out-tab");
+  const outputPanels = document.querySelectorAll(".out-panel");
+  outputTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      outputTabs.forEach(t => t.classList.remove("active"));
+      outputPanels.forEach(p => p.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+
+  function generateOutputs(){
+    const jobTitle = document.getElementById("jobTitle").value.trim();
+    const clientGoal = document.getElementById("clientGoal").value.trim();
+
+    if(currentPath === "smm"){
+      document.getElementById("summary").textContent = (jobTitle || "Social Media Support Specialist") + "\n\nDetail-oriented marketing support professional with experience in content coordination, scheduling support, reporting, and administrative execution. Brings transferable strengths in organization, follow-up, and workflow consistency, with hands-on exposure to social content support, Canva asset creation, and engagement tracking. Best positioned for execution-focused social roles needing reliable posting operations and structured reporting.\n\nGoal alignment: " + (clientGoal || "Improve content consistency and social workflow execution.");
+      document.getElementById("experience").textContent = "Administrative Assistant\n- Maintained organized tracking systems and recurring documentation to support timely task execution.\n- Managed schedules and records with consistency, applicable to content calendar workflows.\n- Prepared recurring reports supporting visibility into ongoing activities.\n\nVolunteer Social Media Support\n- Created Canva assets and drafted captions to support scheduled Facebook content.\n- Coordinated posting via Meta Business Suite, maintaining calendar consistency.\n- Tracked engagement data in Sheets to support basic performance reporting.";
+      document.getElementById("projects").textContent = "Social Media Content Calendar Project\n- Built a 30-day content calendar with pillars, cadence, and platform-specific themes.\n\nSocial Media Reporting Dashboard\n- Created an engagement tracker in Sheets to monitor performance and posting frequency.";
+      document.getElementById("skills").textContent = "Social Media Management\n- Content scheduling, calendar coordination, community engagement, caption writing\n\nCreative & Content Support\n- Canva, basic visual asset prep\n\nReporting & Operations\n- Social reporting, Sheets/Excel tracking, documentation";
+      document.getElementById("interview").textContent = "\"I'm targeting social roles where execution and organized support matter. My admin background transfers directly \u2014 tracking, coordination, reporting, deadlines. I've also built hands-on social experience through content support and posting workflows, so I'm positioning for roles where I contribute to execution and reporting while deepening my specialization.\"";
+    } else {
+      document.getElementById("summary").textContent = (jobTitle || "Marketing Automation Support Specialist") + "\n\nProcess-oriented marketing support professional with strengths in documentation, follow-up coordination, and workflow discipline, combined with project-based exposure to landing pages, email sequences, and CRM tagging. Best positioned for junior automation roles needing reliable CRM organization, lead follow-up, and structured operations.\n\nGoal alignment: " + (clientGoal || "Improve lead follow-up and CRM organization.");
+      document.getElementById("experience").textContent = "Administrative Assistant\n- Maintained accurate records and documentation supporting reliable task follow-through.\n- Coordinated follow-up activities and tracked status updates, relevant to CRM workflows.\n\nMarketing Automation Practice Projects\n- Built a landing page and lead form in Systeme.io for a funnel test.\n- Drafted a short nurture email sequence and documented CRM tagging logic.";
+      document.getElementById("projects").textContent = "Lead Capture Funnel Project\n- Built a landing page and form in Systeme.io; drafted a 3-email nurture sequence.\n\nCRM Tagging & Follow-Up Workflow Project\n- Designed a sample tagging and segmentation flow with documented triggers.";
+      document.getElementById("skills").textContent = "Marketing Automation Platforms\n- Systeme.io, Zapier, workflow fundamentals\n\nCRM & Lead Management\n- Tagging/segmentation, follow-up support\n\nEmail & Funnel Support\n- Landing pages, email sequences\n\nOperations & Reporting\n- Excel tracking, documentation";
+      document.getElementById("interview").textContent = "\"My background is strong in structured execution and follow-up, so I'm leaning into automation support roles. I've built practical exposure through landing pages, sequences, and CRM workflow logic \u2014 positioning as someone who can support CRM organization and lead follow-up reliably, not as a senior strategist.\"";
+    }
+    document.querySelector(".out-panel.active").scrollIntoView({behavior:"smooth", block:"start"});
+  }
+
+  async function copyActiveOutput(){
+    const activePanel = document.querySelector(".out-panel.active");
+    if(!activePanel) return;
+    try{ await navigator.clipboard.writeText(activePanel.textContent.trim()); alert("Active output copied."); }
+    catch(err){ alert("Could not copy output."); }
+  }
+
+  document.getElementById("runAnalysisBtn").addEventListener("click", runAnalysis);
+  document.getElementById("loadDemoBtn").addEventListener("click", loadDemoData);
+  document.getElementById("clearBtn").addEventListener("click", clearForm);
+  document.getElementById("generateOutputsBtn").addEventListener("click", generateOutputs);
+  document.getElementById("copyActiveOutputBtn").addEventListener("click", copyActiveOutput);
+
+  setPath("smm");
+  refreshRailProgress();
+</script>
+</body>
+</html>
