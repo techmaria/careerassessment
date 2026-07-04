@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Quiz &mdash; Marketing Automation vs SMM Fit Quiz</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header class="site-header container">
+      <div class="site-logo">
+        <span class="logo-dot"></span>
+        Niche Finder
+      </div>
+      <a href="index.html" class="btn btn-ghost" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+        Exit
+      </a>
+    </header>
+
+    <main class="container">
+
+      <!-- Progress & meta -->
+      <div class="quiz-header">
+        <div class="quiz-meta">
+          <span id="question-counter" class="quiz-counter">Question 1 of 20</span>
+          <span id="section-label" class="quiz-section-label"></span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5">
+          <div id="progress-bar" class="progress-bar" style="width: 5%;"></div>
+        </div>
+      </div>
+
+      <!-- Question card -->
+      <div class="question-card">
+        <p id="question-text" class="question-text"></p>
+        <ul id="choices-list" class="choices-list" role="list" aria-label="Answer choices">
+          <!-- Injected by quiz.js -->
+        </ul>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="quiz-nav" aria-label="Quiz navigation">
+        <button id="btn-prev" class="btn btn-ghost" type="button" disabled style="visibility:hidden;">
+          &larr; Previous
+        </button>
+        <button id="btn-next" class="btn btn-primary" type="button" disabled>
+          Next
+        </button>
+      </nav>
+
+    </main>
+  </div>
+
+  <script src="quiz-data.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
