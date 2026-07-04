@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Your Results &mdash; Marketing Automation vs SMM Fit Quiz</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header class="site-header container">
+      <div class="site-logo">
+        <span class="logo-dot"></span>
+        Niche Finder
+      </div>
+      <a href="index.html" class="btn btn-ghost" style="padding: 0.45rem 1rem; font-size: 0.85rem;">
+        Home
+      </a>
+    </header>
+
+    <main class="container">
+
+      <!-- Result headline -->
+      <div class="results-header">
+        <div id="result-badge" class="result-badge hybrid">Loading...</div>
+        <h1 id="result-headline">Your Best Fit</h1>
+        <p id="result-tagline" class="tagline"></p>
+      </div>
+
+      <!-- Score bars -->
+      <div class="score-section">
+        <h2>Your Scores</h2>
+
+        <div class="score-row">
+          <div class="score-label-row">
+            <span class="score-label">Marketing Automation</span>
+            <span id="ma-pct" class="score-pct ma">—</span>
+          </div>
+          <div class="score-track">
+            <div id="ma-fill" class="score-fill ma" style="width:0%;"></div>
+          </div>
+        </div>
+
+        <div class="score-row">
+          <div class="score-label-row">
+            <span class="score-label">Social Media Management</span>
+            <span id="smm-pct" class="score-pct smm">—</span>
+          </div>
+          <div class="score-track">
+            <div id="smm-fill" class="score-fill smm" style="width:0%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="result-summary-card">
+        <h2>What This Means For You</h2>
+        <p id="result-summary"></p>
+      </div>
+
+      <!-- Recommendations -->
+      <div class="recommendations-card">
+        <h2 id="recommendations-title">Suggested Beginner Services</h2>
+        <ul id="recommendations-list" class="recommendation-list">
+          <!-- Injected by results.js -->
+        </ul>
+      </div>
+
+      <!-- Section breakdown -->
+      <div class="breakdown-section">
+        <h2>Score Breakdown by Section</h2>
+        <table class="breakdown-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>MA Score</th>
+              <th>SMM Score</th>
+            </tr>
+          </thead>
+          <tbody id="breakdown-body">
+            <!-- Injected by results.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Actions -->
+      <div class="results-actions">
+        <button id="btn-retake" class="btn btn-outline" type="button">
+          Retake Quiz
+        </button>
+        <a href="index.html" class="btn btn-ghost" type="button">
+          Back to Home
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="quiz-data.js"></script>
+  <script src="results.js"></script>
+</body>
+</html>
